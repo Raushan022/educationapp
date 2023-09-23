@@ -1,8 +1,9 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React from 'react';
+import { Image, StyleSheet, Text, View } from 'react-native';
 
-const Home = () => {
-   const description = 'This is our Education App for you to learn' 
+
+const Home = (props) => {
+   const description = 'This is our Education App for you to learn code. Here you can find my prohects and link to their repos.' 
    return (
      <View style={styles.mainContainer}>
        <View style={styles.homeTop}>
@@ -20,7 +21,7 @@ const Home = () => {
                color: '#4c5dab',
                marginTop: 0,
              }]}>
-           Education App 2
+           {props.channelName} 
          </Text>
  
          <Text style={styles.paraStyle}>{description}</Text>
