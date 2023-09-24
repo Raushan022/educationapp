@@ -33,7 +33,7 @@ const Home = (props) => {
         <Menu />
         <View style={[styles.lineStyle, 
         {
-          marginVertical: 20,
+          marginVertical: 10,
         }
         ]}></View>
 
